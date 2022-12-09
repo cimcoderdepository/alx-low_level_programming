@@ -18,6 +18,5 @@ int main(void)
 	printf("Size of a long int: %ld byte(s)\n", (unsigned long)sizeof(c));
 	printf("Size of a long long int: %ld byte(s)\n", (unsigned long)sizeof(d));
 	printf("Size of a float: %ld byte(s)\n", (unsigned long)sizeof(f));
-	fprintf("Stderr\n", "[Anything]");
 	return (0);
 }
