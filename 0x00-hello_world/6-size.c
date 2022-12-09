@@ -7,11 +7,12 @@
  */
 int main(void)
 {
-	"char a\n";
-	"int b\n";
-	"long int c\n";
-	"long long int d\n";
-	"float f\n";
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
+
 	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
 	printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
 	printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
