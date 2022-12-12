@@ -10,21 +10,21 @@
 
 int main(void)
 {
-	int d, p, c;
+	int d, p, q;
 
-	for (d = '0'; d < '8'; d++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (p = d + 1; p <= '8'; p++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			for (c = d + 2; c <= '9'; c++)
+			for (q = p + 1; q <= '9'; q++)
 			{
-				if (c != p && p != d)
+				if ((p != d) != q)
 				{
 					putchar(d);
 					putchar(p);
-					putchar(c);
+					putchar(q);
 
-					if (d == '7' && p == '8' && c == '9')
+					if (d == '7' && p == '8')
 						continue;
 
 					putchar(',');
