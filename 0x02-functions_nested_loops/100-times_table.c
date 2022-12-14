@@ -5,7 +5,7 @@
  * @n: An input integer value
  * Return: Nothing
  */
-void print_times_table(int n)
+void print_times_table(int n);
 {
 	int i, j;
 
@@ -26,7 +26,7 @@ void print_times_table(int n)
  * @n: number to format
  * Return: nothing
  */
-void putformat(int n)
+void putformat(int n);
 {
 	if (n <= 9)
 	{

@@ -1,8 +1,8 @@
-#include "main.h"
+#include <stdlib.h>
 
 /**
- *_abs - Check main
- * @r: An integre input
+ *_abs - Check stdlib
+ * @r: An integer input
  * Description: This function returns absolute value of a number
  * Return: Absolut value of number r
  */
