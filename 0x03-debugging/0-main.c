@@ -11,7 +11,7 @@ int main(void)
 	int i;
 
 	i = 98;
-	/* positive_or_negative = i; */
+	positive_or_negative = int i
 
 	printf("%d is postive\n", i);
 
