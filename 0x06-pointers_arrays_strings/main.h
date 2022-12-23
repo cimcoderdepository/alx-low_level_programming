@@ -10,7 +10,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *cap_string(char *);
 int check_seperators(char c);
-
+char *leet(char *);
 
 
 
