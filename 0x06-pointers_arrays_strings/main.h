@@ -11,7 +11,7 @@ char *cap_string(char *);
 char *cap_string(char *);
 int check_seperators(char c);
 char *leet(char *);
-
+char *rot13(char *);
 
 
 #endif
