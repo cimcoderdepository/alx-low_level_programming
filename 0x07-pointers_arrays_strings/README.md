@@ -1,4 +1,4 @@
-#0x07. C - Even more pointers, arrays and strings#
+# 0x07. C - Even more pointers, arrays and strings
 
 For this project, we expect you to look at this concept:
 
@@ -14,12 +14,12 @@ Multi-dimensional Arrays in C https://alx-intranet.hbtn.io/rltoken/HUZIJ6t55KM7d
 Two dimensional (2D) arrays in C programming with example https://alx-intranet.hbtn.io/rltoken/Dx9nIBRj68sRBGe2NRI_aQ
 
 
-#Learning Objectives#
+# Learning Objectives
 
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-#General#
+# General
 
 💡What are pointers to pointers and how to use them
 
@@ -27,7 +27,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 💡What are the most common C standard library functions to manipulate strings
 
-#Copyright - Plagiarism#
+# Copyright - Plagiarism
 You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 You are not allowed to publish any content of this project.
@@ -35,7 +35,7 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 
 **Requirements
 
-#General#
+# General
 
 💡Allowed editors: vi, vim, emacs
 
@@ -63,5 +63,5 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 
 💡Don’t forget to push your header file
 
-#More Info#
+# More Info
 You do not need to learn about pointers to functions, arrays of structures, malloc and free - yet.
