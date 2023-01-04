@@ -1,5 +1,4 @@
-#
-catnclude "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -27,5 +26,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack);
 		haystack = starth + 1;
 	}
-	return (NULL);
+		return (NULL);
 }
