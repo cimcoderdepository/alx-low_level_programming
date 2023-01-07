@@ -261,12 +261,12 @@ int _islower(int c)
 
 	return (lower);
 }
-3-puts.c/       0           0     0     644     188       `
+3-puts.c/       0           0     0     644     186       `
 #include "main.h"
 
 /**
  * _puts - A function that prints a string
- * @str: character to be printed
+ * @s: character to be printed
 */
 
 void _puts(char *s)
@@ -471,11 +471,16 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-main.c/         0           0     0     644     148       `
+main.c/         0           0     0     644     199       `
 #include "main.h"
-
+/**
+ * main - Entry point
+ * Return: 0 at success
+ */
 int main(void)
 {
-    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-    return (0);
+	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t"
+	"- Kevin Mitnick");
+	return (0);
 }
+
