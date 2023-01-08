@@ -48,4 +48,4 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
  * You are allowed to use the standard library
 
-# [Happy coding!!!][https://github.com/cimcoderdepository]
+### [Happy coding!!!](https://github.com/cimcoderdepository)
