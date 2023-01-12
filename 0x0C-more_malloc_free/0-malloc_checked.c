@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * malloc_checked - void pointer
  * @b: number of elements to determine memory allocation
@@ -8,12 +8,13 @@
 
 void *malloc_checked(unsigned int b)
 {
+
 	void *ptr;
 
-	ptr = malloc(sizeof(int) * b);
-	ptr = malloc(sizeof(char) * b);
+	ptr = malloc(sizeof(unsigned int) * b);
+	/*ptr = malloc(sizeof(char) * b);
 	ptr = malloc(sizeof(float) * b);
-	ptr = malloc(sizeof(double) * b);
+	ptr = malloc(sizeof(double) * b);*/
 
 
 	if (ptr == NULL)
