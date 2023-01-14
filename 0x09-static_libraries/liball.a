@@ -44,7 +44,28 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (start);
 }
-0-strcat.c/     0           0     0     644     0         `
+0-strcat.c/     0           0     0     644     332       `
+#include "main.h"
+
+/**
+ * _strcat - a function that concatenates two strings.
+ * @dest: an input string
+ * @src: an input string
+ * Return: A pointer to the resulting string
+ */
+char *_strcat(char *dest, char *src)
+{
+	char *temp = dest;
+
+	while (*dest)
+		dest++;
+
+	while (*src)
+		*dest++ = *src++;
+
+	*dest = '\0';
+	return (temp);
+}
 1-isdigit.c/    0           0     0     644     314       `
 #include "main.h"
 
