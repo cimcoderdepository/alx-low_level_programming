@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 
-#define ABS(x) ((x<0) ? (-x):(x))
+int ABS(int x)
+{
+    return ((x<0)?(-x):(x));
+}
 
 #endif
