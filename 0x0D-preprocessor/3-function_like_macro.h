@@ -3,9 +3,9 @@
 
 #include <stdio.h>
 
-int ABS(int x)
-{
-    return ((x<0)?(-x):(x));
-}
+
+unsigned int ABS(int x); /* fuction-like macro declaration starts here */
+
+#define ABS(x) ((x<0)?(-x):(x))
 
 #endif
