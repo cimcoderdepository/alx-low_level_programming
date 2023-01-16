@@ -33,9 +33,10 @@ At the end of this project, you are expected to be able to [explain to anyone](h
  * How to include guard your header files
 
 
-#Quiz questions
 
-## Question #0
+# Quiz questions
+
+### Question #0
 
 The preprocessor links our code with libraries.
 
@@ -43,7 +44,7 @@ The preprocessor links our code with libraries.
 
  * False
 
-## Question #1
+### Question #1
 
 Why should we use include guards in our header files?
 
@@ -51,7 +52,7 @@ Why should we use include guards in our header files?
 
  * To avoid the problem of double inclusion when dealing with the include directive.
 
-## Question #2
+### Question #2
 
 What will be the last 5 lines of the output of the command gcc -E on this code?
 
@@ -97,7 +98,7 @@ int main()
 }
 ```
 
-## Question #3
+### Question #3
 
 What are the steps of compilation?
 
@@ -108,7 +109,7 @@ What are the steps of compilation?
 
  * preprocessor 2.compiler 3. assembler 4. linker
 
-## Question #4
+### Question #4
 
 The preprocessor generates assembly code
 
@@ -116,7 +117,7 @@ The preprocessor generates assembly code
 
  * False
 
-## Question #5
+### Question #5
 
 What does the macro TABLESIZE expand to?
 
@@ -133,7 +134,7 @@ What does the macro TABLESIZE expand to?
 
  * 37
 
-## Question #6
+### Question #6
 
 What is the gcc option that runs only the preprocessor?
 
@@ -152,7 +153,7 @@ What is the gcc option that runs only the preprocessor?
 
  * -P
 
-## Question #7
+### Question #7
 
 What will be the output of this program? (on a standard 64 bits, Linux machine)
 ```
@@ -183,7 +184,7 @@ int main(void)
 
  * It does not compile
 
-## Question #8
+### Question #8
 
 The macro __FILE__ expands to the name of the current input file, in the form of a C string constant.
 
@@ -191,7 +192,7 @@ The macro __FILE__ expands to the name of the current input file, in the form of
 
  * False
 
-## Question #9
+### Question #9
 
 This portion of code is actually using the library stdlib.
 ```
@@ -202,7 +203,7 @@ This portion of code is actually using the library stdlib.
 
  * False
 
-## Question #10
+### Question #10
 
 The preprocessor generates object code
 
@@ -210,7 +211,7 @@ The preprocessor generates object code
 
  * False
 
-## Question #11
+### Question #11
 
 This is the correct way to define the macro `SUB`:
 
@@ -235,7 +236,7 @@ This is the correct way to define the macro `SUB`:
 #define SUB(a, b) (a - b)
 ```
 
-## Question #12
+### Question #12
 
 The preprocessor removes all comments
 
@@ -243,7 +244,7 @@ The preprocessor removes all comments
 
  * False
 
-## Question #13
+### Question #13
 
 `NULL` is a macro
 
@@ -251,7 +252,7 @@ The preprocessor removes all comments
 
  * False
 
-## Question #14
+### Question #14
 
 This code will try to allocate 1024 bytes in the heap:
 ```
