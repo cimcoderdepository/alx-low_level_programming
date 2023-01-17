@@ -3,9 +3,8 @@
 
 #include <stdio.h>
 
+/* fuction-like macro declaration starts here */
 
-unsigned int ABS(int x); /* fuction-like macro declaration starts here */
-
-#define ABS(x) ((x<0)?(-x):(x))
+#define ABS(x) ((x<0) ? (-x):(x))
 
 #endif
