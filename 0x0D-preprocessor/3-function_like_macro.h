@@ -2,9 +2,10 @@
 #define function_like_macro_h
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-/* fuction-like macro declaration starts here */
-
-#define ABS(x) ((x<0) ? (-x):(x))
+#define ABS(x)
+	return (|x|);
 
 #endif
