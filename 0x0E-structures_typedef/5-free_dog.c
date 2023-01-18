@@ -1,17 +1,15 @@
 #include "dog.h"
-
+/**
+ * free_dog - frees the dogs..
+ * @d: Pointer to the struct.
+ * Return: None.
+ */
 void free_dog(dog_t *d)
 {
-	/* d = (dog_t *)malloc(sizeof(dog_t));*/
-
-	if (d == NULL)
-		return;
-
-	if (d->name != NULL)
+	if (d)
+	{
 		free(d->name);
-
-	if (d->owner != NULL)
 		free(d->owner);
-	
-	free(d);
+		free(d);
+	}
 }
