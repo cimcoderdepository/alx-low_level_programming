@@ -18,7 +18,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array && size && action)	/* this line validates {array, size, action} */
 					/* are not empty */
 	{
-		for (index < size;)	/* we use [for-loop] here to condition the */
+		for (; index < size;)	/* we use [for-loop] here to condition the */
 					/* behaviour of array for as long as the indexing */
 					/* is always less than the array elements... */
 		{
