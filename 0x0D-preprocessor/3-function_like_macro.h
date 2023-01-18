@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define ABS(x)
-	return (|x|);
+#define ABS(x) ((x < 0) ? -(x) : (x))
 
 #endif
