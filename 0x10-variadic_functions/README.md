@@ -27,7 +27,8 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 ## General
 
  * Allowed editors: `vi`, `vim`, `emacs`
-All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+
+ * All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
 
  * All your files should end with a new line
 
