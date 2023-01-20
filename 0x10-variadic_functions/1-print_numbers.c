@@ -24,15 +24,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 						/* to stop printing the [separator] string */
 	{
 
-		if (!separator)	/* we tell compiler if [separator] is NULL, omit... */
-				/* it and print only integer (which in this case, va_arg(list, int)) */
+		if (separator)	/* we tell compiler if [separator] is a string, include... */
+				/* it and print both [va_arg(list, int)] and [separator] together */
 		{
-			printf("%d", va_arg(list, int));	/* only va_arg(list, int) is printed */
+			printf("%d%s", va_arg(list, int), separator);
 		}
 		else	/* this block means the reverse of the [if statement] block above.... */
 		{
-			printf("%d%s", va_arg(list, int), separator);	/* Hence where... */
-				/* [separator] is the string to be printed between numbers... */
+			printf("%d", va_arg(list, int));	/* only va_arg(list, int) is printed */
 		}
 	}
 
@@ -40,7 +39,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 						/* compiler will print last nth argument */
 						/* without  putting [separator]... */
 
-	printf("\n");	/* and add new line */
+	 va_end(list);	/* we end the list here */
 
-	va_end(list);   /* we end the list here */
+	printf("\n");	/* and add new line */
 }
