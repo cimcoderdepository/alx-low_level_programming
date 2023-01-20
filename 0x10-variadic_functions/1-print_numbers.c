@@ -40,7 +40,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 						/* compiler will print last nth argument */
 						/* without  putting [separator]... */
 
-	va_end(list);	/* we end the list here */
-
 	printf("\n");	/* and add new line */
+
+	va_end(list);   /* we end the list here */
 }
