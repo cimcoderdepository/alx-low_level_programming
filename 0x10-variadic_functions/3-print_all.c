@@ -37,7 +37,6 @@ void print_str(va_list arg)
 
 	if (string)	/* if string is contains something...*/
 			/*...Meaning it is NOT NULL (empty) */
-
 		printf("%s", string);
 
 	else	/* if the string is NULL */
@@ -65,15 +64,18 @@ void print_all(const char * const format, ...)
 
 	va_start(uduak, format);
 
+
 	while (format[i])
 	{
-		for (j = 0; j < 3; j++)
+		j = 0;
+		while (j < 3)
 		{
 			if (format[i] == format_funcs[j].symbol)
 			{
 				format_funcs[j].print(uduak);
 				printf(", ");
 			}
+			j++;
 		}
 		i++;
 	}
