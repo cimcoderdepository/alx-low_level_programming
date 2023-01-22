@@ -35,12 +35,11 @@ void print_str(va_list arg)
 	char *string = va_arg(arg, char *);	/* we create a buffer...*/
 	/*...(a.k.a container) called [string] to hold [va_arg(arg, char *)] */
 
-	if (string)	/* if string is contains something...*/
-			/*...Meaning it is NOT NULL (empty) */
-		printf("%s", string);
-
-	else	/* if the string is NULL */
+	if (!string)	 /* if the string is NULL */
 		printf("(nil)");
+
+	printf("%s", string);	/* if string is contains something...*/
+				/*...Meaning it is NOT NULL (empty) */
 }
 
 /**
@@ -52,6 +51,7 @@ void print_all(const char * const format, ...)
 	va_list uduak;
 	int i = 0, j;	/* [i] to be looping through "ceis" in the...*/
 			/*...main file. see (3-main.c) file for more info */
+	char *separator = "";
 
 	prt format_funcs[] = {	/* [j] to be looping through the structure */
 	/*[ptr format_funcs[]. we initailize "ceis" array to access its index */
@@ -65,21 +65,22 @@ void print_all(const char * const format, ...)
 	va_start(uduak, format);
 
 
-	while (format[i])
+	while (format && format[i])
 	{
 		j = 0;
-		while (j < 3)
+		while (j < 4)
 		{
 			if (format[i] == format_funcs[j].symbol)
 			{
+				printf("%s", separator);
 				format_funcs[j].print(uduak);
-				printf(", ");
+				separator = ", ";
+				break;
 			}
 			j++;
 		}
 		i++;
 	}
-	format_funcs[j].print(uduak);
 	printf("\n");
 	va_end(uduak);
 }
