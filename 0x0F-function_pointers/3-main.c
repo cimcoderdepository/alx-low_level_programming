@@ -1,36 +1,47 @@
-#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * main - a program that performs simple operations.
- * @argc: command-line argument count
- * @argv: command-line list of arguments
- * Return: return the result of the operation.
-*/
+#include <stddef.h>
+#include <stdarg.h>
+#include "3-calc.h"
 
-int main(int argc, char **argv)
+/* A function that is an array of pointers */
+int (*get_op_func(char *s))(int, int);
+
+/**
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always 0.
+ */
+int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[3]);
+	int a, b;
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (!get_op_func(argv[2]))
+
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (*argv[2] == '/' || *argv[2] == '%')
+
+	operation = (*get_op_func)(argv[2]);
+
+	if (operation == NULL)
 	{
-			if (num2 == 0)
-			{
-				printf("Error\n");
-				exit(100);
-			}
+		printf("Error\n");
+		exit(99);
 	}
-	printf("%d\n", (get_op_func)(argv[2])(num1, num2));
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	printf("%d\n", operation(a, b));
 	return (0);
 }
