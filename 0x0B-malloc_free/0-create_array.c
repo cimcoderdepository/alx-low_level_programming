@@ -8,6 +8,7 @@
  * @c: A character to initialized the array
  * Return: Apointer to the array or NULL if it fails
  */
+
 char *create_array(unsigned int size, char c)
 {
 	char *s;
