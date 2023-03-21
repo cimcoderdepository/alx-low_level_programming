@@ -1,4 +1,4 @@
-# step by step giude to create dynamic libraries on Linux
+# STEP-BY-STEP GUIDE TO CREATE DYNAMIC LIBRARIES ON LINUX
 
 Here are the steps to create dynamic libraries on Linux:
 
