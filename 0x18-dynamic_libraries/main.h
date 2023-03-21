@@ -22,4 +22,10 @@ extern unsigned int _strspn(char *s, char *accept);
 extern char *_strpbrk(char *s, char *accept);
 extern char *_strstr(char *haystack, char *needle);
 
+extern int add(int a, int b);
+extern int sub(int a, int b);
+extern int mul(int a, int b);
+extern int div(int a, int b);
+extern int mod(int a, int b);
+
 #endif
