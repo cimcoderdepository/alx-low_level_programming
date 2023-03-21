@@ -1,4 +1,4 @@
-# HOW TO USE "grep" COMMAND TO SEARCH FOR FILE KEYWORD IN A DIRECTORY
+# How to use "grep" command to search for file in a directory
 
 To use the grep command to search for a keyword in a file in a directory, follow these steps:
 

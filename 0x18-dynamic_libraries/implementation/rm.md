@@ -1,4 +1,4 @@
-# HOW TO USE "rm" COMMAND TO DELETE MULTIPLE FILES WHILE IGNORING SPECIFIC FILES
+# How to use "rm" command to delete multiple files while ignoring specific files
 
 The `rm` command in Linux is used to remove files and directories. To delete multiple files while excluding a few specific ones, you can use a combination of wildcards and exclusion patterns with the `rm` command.
 

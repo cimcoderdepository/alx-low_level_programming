@@ -1,4 +1,4 @@
-# WHAT IS THE DIFFERENCE BETWEEN DYNAMIC AND STATIC LIBRARY (STATIC AND DYNAMIC LINKING)
+# What is the difference between Dynamic and Static Library (static and dynamic linking)
 
 Static and dynamic libraries are two different ways of packaging and using code in a software application.
 

@@ -1,4 +1,4 @@
-# WHAT ARE THE BASIC USAGE: `nm`, `ldd`, `ldconfig`
+# What are the basic usage: `nm`, `ldd`, `ldconfig`
 
 The `nm`, `ld`, and `ldconfig` are all command-line utilities commonly found in Linux-based operating systems.
 

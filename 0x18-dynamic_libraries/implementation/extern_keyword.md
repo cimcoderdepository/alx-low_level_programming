@@ -1,4 +1,4 @@
-# HOW TO USE THE "extern" KEYWORD IN A C PROGRAM
+# How to use "extern" keyword in a C program
 
 In C programming language, the extern keyword is used to declare a variable or function that is defined in another source file or module. This allows you to use a variable or function that is defined in a different file or module in your current program.
 

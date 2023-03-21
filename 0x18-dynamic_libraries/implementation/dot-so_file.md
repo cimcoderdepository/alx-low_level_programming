@@ -1,4 +1,4 @@
-# WHAT IS A ".so" FILE?
+# What is a ".so" file?
 
 A `.so` file, also known as a shared object file, is a type of dynamic library file used by Unix/Linux operating systems. It contains executable code and data that can be shared by multiple applications at runtime, making it an efficient way to manage system resources.
 
