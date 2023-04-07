@@ -31,5 +31,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 		ht->array[i] = NULL;
 		i++;
 	}
-	return ((hash_table_t *) ht);
+	return (ht);
 }
