@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "hash_tables.h"
 
 /**
@@ -11,22 +9,23 @@
 * your function should return NULL.
 *
 */
-
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	unsigned long int i;
-	hash_table_t *table = NULL;
-
-	table = malloc(sizeof(hash_table_t));
-	if (!table)
-		return (NULL);
-	table->size = size;
-	table->array = malloc(sizeof(hash_node_t) * size);
-	if (table == NULL)
-		return (NULL);
-	for (i = 0; i < size; i++)
+	unsigned long int i = 0;
+	hash_table_t *ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 	{
-		table->array = NULL;
+		return (NULL);
 	}
-	return (table);
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
+	{
+		return NULL;
+	}
+	for (; i < size; i++)
+	{
+		ht->array[i] = NULL;
+	}
+	return (ht);
 }
