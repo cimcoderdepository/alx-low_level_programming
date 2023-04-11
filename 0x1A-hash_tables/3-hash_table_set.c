@@ -45,15 +45,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* if the key not exist */
 	else
 	{
-	/**
-	*	ht->array = malloc(sizeof(hash_node_t) * ht->size);
-	*	if (ht->array == NULL)
-	*	return (0);
-
-	*	ht->array[index]->key = NULL;
-	*	ht->array[index]->value = NULL;
-	*	ht->array[index]->next = NULL;
-	*/
+		ht->array = malloc(sizeof(hash_node_t) * ht->size);
+		if (ht->array == NULL)
 		return (0);
+
+/**
+* ht->array[index]->key = NULL;
+*		ht->array[index]->value = NULL;
+*		ht->array[index]->next = NULL;
+*/		return (0);
 	}
 }
